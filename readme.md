@@ -12,13 +12,19 @@ Each project focuses on different concepts — from landing pages to portfolios 
 
 A simple static landing page created to practice basic layout and HTML/CSS structure.
 
+### 🔗 Live Site
+
+**Visit here ➜** [https://lovely-crisp-45907e.netlify.app/](https://lovely-crisp-45907e.netlify.app/)
+
 ---
 
 ### 2. 📱 Leno App Website
 
 A clean landing page for a fictional Android app — includes sections like features, screenshots, and download buttons. Great for understanding app showcase designs.
 
----
+### 🔗 Live Site
+
+## **Visit here ➜** [https://silver-pothos-7146e0.netlify.app/](https://silver-pothos-7146e0.netlify.app/)
 
 ### 3. 🌒 TechBees Landing Page (Dark Mode)
 
@@ -27,7 +33,7 @@ Focus was on responsive design and modern UI elements.
 
 ### 🔗 Live Site
 
-**Visit here ➜** [https://silver-bunny-55dac7.netlify.app/](https://silver-bunny-55dac7.netlify.app/)
+**Visit here ➜** [https://deft-truffle-323748.netlify.app/](https://deft-truffle-323748.netlify.app/)
 
 ---
 
@@ -36,25 +42,35 @@ Focus was on responsive design and modern UI elements.
 An educational institution website with typical sections like courses, about, and contact.  
 Made to practice multi-section layout, form design, and semantic HTML.
 
----
+### 🔗 Live Site
+
+## **Visit here ➜** [https://admirable-mandazi-6af8b0.netlify.app/](https://admirable-mandazi-6af8b0.netlify.app/)
 
 ### 5. 🖼️ El Lumina (Image Gallery)
 
 A stylish image gallery site built with grid/flexbox.  
 Aimed at understanding responsive image layouts.
 
----
+### 🔗 Live Site
+
+## **Visit here ➜** [https://effulgent-rabanadas-a284af.netlify.app/](https://effulgent-rabanadas-a284af.netlify.app/)
 
 ### 6. 🙋‍♂️ Dummy Portfolio
 
 A basic portfolio template made purely in HTML & CSS.  
 Included to practice personal branding sections like about, projects, contact, etc.
 
----
+### 🔗 Live Site
+
+## **Visit here ➜** [https://silver-bunny-55dac7.netlify.app/](https://silver-bunny-55dac7.netlify.app/)
 
 ## ⚠️ Note:
 
 These projects are **not connected to any backend**, and do **not contain functional logic** — they are created **purely for practicing layout and design**.
+
+### 🔗 Live Site
+
+**Visit here ➜** []()
 
 ---
 
