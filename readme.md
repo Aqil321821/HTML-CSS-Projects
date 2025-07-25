@@ -25,6 +25,10 @@ A clean landing page for a fictional Android app — includes sections like feat
 A landing page for a tech startup with a **dark mode toggler** built using pure HTML, CSS, and a touch of JavaScript.  
 Focus was on responsive design and modern UI elements.
 
+### 🔗 Live Site
+
+**Visit here ➜** [https://silver-bunny-55dac7.netlify.app/](https://silver-bunny-55dac7.netlify.app/)
+
 ---
 
 ### 4. 🎓 Education Website
