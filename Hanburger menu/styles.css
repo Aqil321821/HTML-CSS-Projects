@@ -1,0 +1,89 @@
+/* default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.navbar {
+  background: #2a52be;
+  /* background-color: #9292eb; */
+  padding: 1rem 1rem;
+}
+.navbar .logo {
+  width: 50px;
+}
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .main-menu-list {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navbar a:hover {
+  color: #2a52be;
+  color: #1034a6;
+  color: black;
+}
+
+/* styles mobile menu */
+.navbar .mobile-menu-items {
+  background-color: #1e90ff;
+  position: absolute;
+  top: 82px;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 1.5rem;
+  }
+}
+.navbar .mobile-menu i:hover {
+  cursor: pointer;
+}
+.navbar .mobile-menu-items.active {
+  transform: translateX(0);
+}
+.navbar .mobile-menu {
+  display: none;
+}
+/* hide main menu on mobile screen */
+@media (max-width: 768px) {
+  .navbar .main-menu {
+    display: none;
+  }
+  .navbar .mobile-menu {
+    display: block;
+  }
+}
