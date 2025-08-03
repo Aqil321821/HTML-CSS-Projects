@@ -165,7 +165,7 @@ img {
 /* hero */
 .hero {
   /* border: 5px solid rgb(34, 37, 211); */
-  background: #000 url('/images/header-background.jpg') center center/cover no-repeat;
+  background: #000 url('../images/header-background.jpg') center center/cover no-repeat;
   padding: 11.5rem 2rem 8rem;
   color: #fff;
   overflow-x: hidden;
@@ -290,7 +290,7 @@ img {
 
 /* info section */
 .info-container {
-  background: url('/images/audience.jpg') top center/cover no-repeat;
+  background: url('../images/audience.jpg') top center/cover no-repeat;
   display: flex;
 }
 .info-content {
