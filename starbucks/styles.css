@@ -1,0 +1,33 @@
+* {
+  font-family: 'Poppins';
+}
+@font-face {
+  font-family: 'SoDoLight', serif;
+  src: url('./assets/fonts/SoDoSans-Light.ttf');
+}
+@font-face {
+  font-family: 'SoDoReg', serif;
+  src: url('./assets/fonts/SoDoSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'SoDoSemi', serif;
+  src: url('./assets/fonts/SoDoSans-SemiBold.ttf');
+}
+
+/* Navbar */
+.navbar-brand img {
+  width: 45px;
+  height: auto;
+  font-family: 'SoDoSemi', serif;
+}
+.navbar {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06), 0 0px 2px rgba(0, 0, 0, 0.07);
+  font-weight: 600;
+  text-transform: uppercase;
+
+  a {
+    color: black;
+    letter-spacing: 1px;
+    font-size:0.96rem;
+  }
+}
