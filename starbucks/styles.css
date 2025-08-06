@@ -1,6 +1,9 @@
 * {
   font-family: 'Poppins';
 }
+body {
+  overflow-x: hidden !important;
+}
 @font-face {
   font-family: 'SoDoLight', serif;
   src: url('./assets/fonts/SoDoSans-Light.ttf');
@@ -58,6 +61,11 @@
   gap: 2rem;
   align-items: center;
 }
+#navbarSupportedContent > div > div > a > span {
+  /* border: 1px solid red; */
+  text-transform: none;
+  font-size: 0.9rem;
+}
 .btn-white {
   border: 1px solid #000;
   border-radius: 2rem;
@@ -81,4 +89,110 @@
 .btn-dark:hover {
   opacity: 0.8;
 }
+button:focus {
+  outline: none;
+  box-shadow: none !important;
+}
 /* Desktop Nav Done */
+/* Mobile menu under 992 */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    text-align: center;
+    gap: 4rem;
+    z-index: 2;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: #ffff;
+    li {
+      padding-bottom: 0.7rem;
+      border-bottom: 1px dotted #333;
+    }
+
+    .nav-right-sb {
+      /* border: 1px solid red; */
+      justify-content: center;
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+  body > nav.navbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+main .first-box {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  background-color: antiquewhite;
+}
+
+main .first-box .col-left {
+  background: url('./assets/media/box1.jpg') center center/cover no-repeat;
+  height: 500px;
+}
+
+main .first-box .col-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #00754a;
+  padding: 6rem 3rem;
+}
+
+main .first-box .col-right h2 {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-family: 'SoDoReg';
+  font-weight: 600;
+}
+
+main .first-box .col-right h2 span {
+  font-family: 'SoDoSemi';
+}
+
+main .first-box .col-right p {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  max-width: 500px;
+}
+
+main .first-box .col-right button {
+  margin-top: 1rem;
+  background-color: #00754a;
+  color: #fff;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  main .first-box {
+    flex-direction: column;
+  }
+
+  main .first-box .col-left {
+    min-height: 300px;
+  }
+
+  main .first-box .col-right {
+    padding: 2rem 2rem;
+  }
+
+  main .first-box .col-right h2 {
+    font-size: 2.2rem;
+  }
+
+  main .first-box .col-right p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  main .first-box .col-right {
+    padding: 2rem 2rem;
+  }
+}
