@@ -202,6 +202,20 @@ main .third-box .col-right {
     border: 1px solid #333;
   }
 }
+footer {
+  border-top: 1px dotted #333;
+  .btn {
+    background-color: #00754a;
+    color: #fff;
+  }
+  li i {
+    color: #006342;
+    font-size: 2rem;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
 
 /* media query */
 @media (max-width: 992px) {
@@ -218,5 +232,11 @@ main .third-box .col-right {
     h2 {
       font-size: 2rem;
     }
+  }
+  .info {
+    padding: 1rem;
+  }
+  footer {
+    padding: 1.2rem 0;
   }
 }
