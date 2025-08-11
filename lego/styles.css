@@ -3,6 +3,9 @@ body,
 * {
   font-family: 'Poppins', sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
 .poppins-thin {
   font-family: 'Poppins', sans-serif;
   font-weight: 100;
@@ -116,7 +119,7 @@ body,
 .toppest-div {
   background-color: #f6f6f6;
 }
-
+/* utility classes custom */
 .btn-1 {
   background-color: #d9f0ff;
   border: none;
@@ -128,7 +131,12 @@ body,
     background-color: #fff;
   }
 }
-
+.ls-1px {
+  letter-spacing: 1px !important;
+}
+.fs-1-1{
+  font-size: 1.1rem;
+}
 /* swiper styles */
 
 .swiper {
@@ -208,4 +216,17 @@ img.logo {
 }
 input[name='search-items'] {
   border-radius: 50px !important;
+}
+/* main contenet starts */
+
+.w-mx-1300 {
+  max-width: 1300px !important;
+}
+.custom-content {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -30%);
+  span {
+    width: 150%;
+  }
 }
