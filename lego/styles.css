@@ -186,6 +186,26 @@ img.logo {
   padding: 17px;
   border-radius: 50%;
   width: 22px;
-  height:22px;
+  height: 22px;
   border-radius: 50%;
+}
+.btn-prev {
+  left: 0;
+  height: 100%;
+  top: 0;
+  i {
+    font-size: 20px;
+  }
+  padding-left: 10px;
+}
+.btn-next {
+  right: 0;
+  top: 0;
+  height: 100%;
+  i {
+    font-size: 20px;
+  }
+}
+input[name='search-items'] {
+  border-radius: 50px !important;
 }
