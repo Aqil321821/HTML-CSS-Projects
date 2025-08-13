@@ -1,0 +1,47 @@
+* {
+  font-family: 'Poppins';
+  box-sizing: border-box;
+}
+
+/* utility class custom */
+.fs-0-8 {
+  font-size: 0.8rem !important;
+}
+/* Header styles starts */
+/* swiper css */
+.swiper {
+  width: 40%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 15px !important;
+  /* border: 1px solid red; */
+}
+
+.top-div {
+  background-color: #f6f6f6;
+}
+.btn-1 {
+  background-color: #aed6f1;
+  border: none;
+  font-style: 0.7rem;
+  padding: 5px 15px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgb(48, 85, 101, 0.44) 0px 1px 4px 0px;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #fff;
+  }
+}
