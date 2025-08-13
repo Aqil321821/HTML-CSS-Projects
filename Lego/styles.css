@@ -7,6 +7,9 @@
 .fs-0-8 {
   font-size: 0.8rem !important;
 }
+.bg-yellow {
+  background-color: #ffcf00;
+}
 /* Header styles starts */
 /* swiper css */
 .swiper {
@@ -44,4 +47,34 @@
   &:hover {
     background-color: #fff;
   }
+}
+/* nav bar starts */
+.btn-2 {
+  background-color: whitesmoke;
+  color: #e3000b;
+  border: none;
+  text-decoration: none;
+  font-style: 0.9rem;
+  padding: 5px 15px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  &:hover {
+    color: #f6f6f6;
+    background-color: #333;
+  }
+}
+/* NAV BAR */
+.navbar-nav li a {
+  font-weight: 500;
+}
+.btn-search {
+  padding-top: 7px !important ;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
 }
