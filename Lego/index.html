@@ -84,14 +84,32 @@
             </li>
           </ul>
           <div class="d-flex">
-            <a href="" class="btn-search me-3">
+            <a class="btn-search me-3" id="btnSearch" onclick="openSearch()">
               <img src="./assets/icons/icon-3.svg" alt="search-icon" style="width: 20px; height: 20px" />
             </a>
+
+            <!--Show Search input when icon is clicked -->
+            <div class="input-group me-4 d-none" id="inpSearch">
+              <input
+                style="z-index: 1"
+                type="text"
+                class="form-control input-field position-relative"
+                name="search-field"
+                 id="searchInput"
+                aria-label="Amount (to the nearest dollar)" />
+              <div class="position-absolute btn-prev h-100 d-flex align-items-center" id="searchIcon">
+                <img src="./assets/icons/icon-3.svg" alt="search-icon" style="width: 20px; height: 20px" />
+              </div>
+              <div class="position-absolute btn-next h-100 d-flex align-items-center" id="clearBtn" onclick="openSearch()">
+                <i class="bi bi-x"></i>
+              </div>
+            </div>
+
             <a href="" class="me-3 d-flex align-items-center">
-              <img src="./assets/icons/icon-4.svg" alt="search-icon" style="width: 20px; height: 20px" />
+              <img src="./assets/icons/icon-4.svg" alt="wish-icon" style="width: 20px; height: 20px" />
             </a>
             <a href="" class="d-flex align-items-center">
-              <img src="./assets/icons/icon-5.svg" alt="search-icon" style="width: 20px; height: 20px" />
+              <img src="./assets/icons/icon-5.svg" alt="cart-icon" style="width: 20px; height: 20px" />
             </a>
           </div>
         </div>
@@ -101,6 +119,8 @@
     <!-- nav ends -->
 
     <!-- Header ends-->
+    <!-- Backdrop shadow -->
+    <div id="box-shadow"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
