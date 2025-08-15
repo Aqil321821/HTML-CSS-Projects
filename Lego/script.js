@@ -1,3 +1,7 @@
+document.getElementById('toggle-debug').addEventListener('click', function () {
+  document.body.classList.toggle('debug');
+});
+
 var swiper = new Swiper('.mySwiper', {
   navigation: {
     nextEl: '.swiper-button-next',
