@@ -1,6 +1,6 @@
-document.getElementById('toggle-debug').addEventListener('click', function () {
-  document.body.classList.toggle('debug');
-});
+// document.getElementById('toggle-debug').addEventListener('click', function () {
+//   document.body.classList.toggle('debug');
+// });
 
 var swiper = new Swiper('.mySwiper', {
   navigation: {
@@ -17,7 +17,7 @@ function openSearch() {
     document.getElementById('btnSearch').classList.add('d-none');
     document.getElementById('inpSearch').classList.remove('d-none');
     document.getElementById('box-shadow').innerHTML =
-      '<div onclick="openSearch()" style="z-index: 0 !important" class="modal-backdrop fade show"></div>';
+      '<div onclick="openSearch()"  class="modal-backdrop fade show"></div>';
     inpSearch = true;
   } else {
     document.getElementById('btnSearch').classList.remove('d-none');
@@ -44,3 +44,32 @@ clearBtn.addEventListener('click', () => {
   searchInput.value = '';
   searchIcon.classList.remove('d-none');
 });
+
+// function to hide toppest div
+function closeTopbar() {
+  let topDiv = document.getElementById('top-div');
+  if (!topDiv.classList.contains('d-none')) {
+    topDiv.classList.add('d-none');
+  }
+}
+
+window.addEventListener('resize', () => {
+  let topDiv = document.getElementById('top-div');
+  if (topDiv.classList.contains('d-none')) {
+    if (window.innerWidth >= 991) {
+      topDiv.classList.remove('d-none');
+      // alert('hello');
+    }
+  }
+});
+
+//function to animate bars when btn is clicked
+function animateBars() {
+  let bar_1 = document.querySelector('.icon-bar-1');
+  let bar_2 = document.querySelector('.icon-bar-2');
+  let bar_3 = document.querySelector('.icon-bar-3');
+
+  bar_1.classList.toggle('icon-bar-1-active');
+  bar_2.classList.toggle('icon-bar-2-active');
+  bar_3.classList.toggle('icon-bar-3-active');
+}

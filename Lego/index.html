@@ -18,12 +18,12 @@
   <body>
     <!-- Header starts-->
     <!-- toppest div starts -->
-    <button id="toggle-debug">DB</button>
+    <button id="toggle-debug d-none" class="d-none">DB</button>
 
-    <div class="top-div">
+    <div class="top-div" id="top-div">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center py-3">
-          <button class="btn-1">
+          <button class="btn-1 d-none d-lg-block">
             <i class="bi bi-arrow-left me-2"></i>
             PLAY ZONE
           </button>
@@ -39,16 +39,20 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
-          <div class="d-flex">
+          <div class="d-flex d-none d-lg-flex">
             <div class="fs-0-8 d-flex align-items-center me-2">
               <img style="width: 15px" class="me-2" src="./assets/icons/icon-1.svg" alt="" />
-              <strong>Sign in</strong>
+              <strong class="d-none d-xl-block">Sign in</strong>
             </div>
             |
             <div class="fs-0-8 d-flex align-items-center">
               <img style="width: 15px" class="ms-2 me-1" src="./assets/icons/icon-2.svg" alt="" />
-              <strong>Join LEGO</strong>
+              <strong class="d-none d-xl-block">Join LEGO</strong>
             </div>
+          </div>
+          <!-- close icon show on when screen is below 992px -->
+          <div class="d-lg-none d-flex align-items-center" onclick="closeTopbar()" style="cursor: pointer">
+            <i class="bi bi-x-lg" style="font-size: 1.5rem !important"></i>
           </div>
         </div>
       </div>
@@ -57,19 +61,27 @@
     <!-- nav starts -->
     <nav class="navbar navbar-expand-lg bg-yellow">
       <div class="container">
-        <a class="navbar-brand me-5" href="#">
-          <img src="./assets/brand-lego.svg" alt="logo" style="width: 50px; height: 50px" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="d-flex align-items-center">
+          <button
+            onclick="animateBars()"
+            id="btnRs"
+            class="navbar-toggler me-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="icon-bar-1"></span>
+            <span class="icon-bar-2"></span>
+            <span class="icon-bar-3"></span>
+            <small>MENU</small>
+          </button>
+          <a class="navbar-brand me-5" href="#">
+            <img src="./assets/brand-lego.svg" alt="logo" style="width: 50px; height: 50px" />
+          </a>
+        </div>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item me-4">
@@ -93,18 +105,22 @@
             <!--Show Search input when icon is clicked -->
             <div class="input-group me-4 d-none" id="inpSearch">
               <input
-                style="z-index: 1"
+                style="z-index: 1051"
                 type="text"
                 class="form-control input-field position-relative"
                 name="search-field"
                 id="searchInput"
                 aria-label="Amount (to the nearest dollar)" />
-              <div class="position-absolute btn-prev h-100 d-flex align-items-center" id="searchIcon">
+              <div
+                style="z-index: 1051"
+                class="position-absolute btn-prev h-100 d-flex align-items-center"
+                id="searchIcon">
                 <img src="./assets/icons/icon-3.svg" alt="search-icon" style="width: 20px; height: 20px" />
               </div>
               <div
                 class="position-absolute btn-next h-100 d-flex align-items-center"
                 id="clearBtn"
+                style="z-index: 1051"
                 onclick="openSearch()">
                 <i class="bi bi-x"></i>
               </div>
