@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- Header starts-->
-    <!-- toppest div starts -->
-    <button id="toggle-debug d-none" class="d-none">DB</button>
+    <!-- Debug button (hidden) -->
+    <button id="toggle-debug" class="d-none">DB</button>
 
+    <!-- Header starts-->
     <div class="top-div" id="top-div">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center py-3">
@@ -33,7 +33,7 @@
               <div class="swiper-slide fs-0-8">Fugit adipisci accusantium amet et tempora commodi.</div>
               <div class="swiper-slide fs-0-8">
                 Buy Now Flash Sale is on !
-                <a href="" class="ms-1">Learn more</a>
+                <a href="#" class="ms-1">Learn more</a>
               </div>
             </div>
             <div class="swiper-button-next"></div>
@@ -41,24 +41,24 @@
           </div>
           <div class="d-flex d-none d-lg-flex">
             <div class="fs-0-8 d-flex align-items-center me-2">
-              <img style="width: 15px" class="me-2" src="./assets/icons/icon-1.svg" alt="" />
+              <img style="width: 15px" class="me-2" src="./assets/icons/icon-1.svg" alt="signin-icon" />
               <strong class="d-none d-xl-block">Sign in</strong>
             </div>
             |
             <div class="fs-0-8 d-flex align-items-center">
-              <img style="width: 15px" class="ms-2 me-1" src="./assets/icons/icon-2.svg" alt="" />
+              <img style="width: 15px" class="ms-2 me-1" src="./assets/icons/icon-2.svg" alt="join-icon" />
               <strong class="d-none d-xl-block">Join LEGO</strong>
             </div>
           </div>
-          <!-- close icon show on when screen is below 992px -->
+          <!-- close icon show when screen < 992px -->
           <div class="d-lg-none d-flex align-items-center" onclick="closeTopbar()" style="cursor: pointer">
             <i class="bi bi-x-lg" style="font-size: 1.5rem !important"></i>
           </div>
         </div>
       </div>
     </div>
-    <!-- toppest div ends -->
-    <!-- nav starts -->
+
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-yellow">
       <div class="container">
         <div class="d-flex align-items-center">
@@ -67,9 +67,9 @@
             id="btnRs"
             class="navbar-toggler me-3"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
             aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="icon-bar-1"></span>
@@ -78,14 +78,14 @@
             <small>MENU</small>
           </button>
           <a class="navbar-brand me-5" href="#">
-            <img src="./assets/brand-lego.svg" alt="logo" style="width: 50px; height: 50px" />
+            <img src="./assets/brand-lego.svg" alt="LEGO logo" style="width: 50px; height: 50px" />
           </a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item me-4">
-              <a class="nav-link active" href="#"> SHOP</a>
+              <a class="nav-link active" href="#">SHOP</a>
             </li>
             <li class="nav-item me-4">
               <a class="nav-link active" href="#">DISCOVER</a>
@@ -102,7 +102,7 @@
               <img src="./assets/icons/icon-3.svg" alt="search-icon" style="width: 20px; height: 20px" />
             </a>
 
-            <!--Show Search input when icon is clicked -->
+            <!--Search input-->
             <div class="input-group me-4 d-none" id="inpSearch">
               <input
                 style="z-index: 1051"
@@ -110,11 +110,11 @@
                 class="form-control input-field position-relative"
                 name="search-field"
                 id="searchInput"
-                aria-label="Amount (to the nearest dollar)" />
+                aria-label="Search field" />
               <div
-                style="z-index: 1051"
                 class="position-absolute btn-prev h-100 d-flex align-items-center"
-                id="searchIcon">
+                id="searchIcon"
+                style="z-index: 1051">
                 <img src="./assets/icons/icon-3.svg" alt="search-icon" style="width: 20px; height: 20px" />
               </div>
               <div
@@ -126,10 +126,10 @@
               </div>
             </div>
 
-            <a href="" class="me-3 d-flex align-items-center">
-              <img src="./assets/icons/icon-4.svg" alt="wish-icon" style="width: 20px; height: 20px" />
+            <a href="#" class="me-3 d-flex align-items-center">
+              <img src="./assets/icons/icon-4.svg" alt="wishlist-icon" style="width: 20px; height: 20px" />
             </a>
-            <a href="" class="d-flex align-items-center">
+            <a href="#" class="d-flex align-items-center">
               <img src="./assets/icons/icon-5.svg" alt="cart-icon" style="width: 20px; height: 20px" />
             </a>
           </div>
@@ -137,15 +137,46 @@
       </div>
     </nav>
 
-    <!-- nav ends -->
+    <!-- Offcanvas menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title p-2" id="offcanvasExampleLabel">MENU</h5>
+        <button type="button" class="btn-close p-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" style="flex-grow: inherit !important">
+        <button class="btn-1 p-3 mb-3 w-100 d-flex justify-content-center" style="font-size: 0.8rem !important">
+          <i class="bi bi-arrow-left me-2"></i>
+          PLAY ZONE
+        </button>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item" style="border-top: 0px !important; color: #bc0c0c">HOME</li>
+        <li class="list-group-item">Falsh Sale !</li>
+        <li class="list-group-item">SHOP</li>
+        <li class="list-group-item">DISCOVER</li>
+        <li class="list-group-item">HELP</li>
+        <li class="list-group-item">
+          <img src="./assets/icons/icon-1.svg" style="width: 20px" class="me-3" />
+          Sign in
+        </li>
+        <li class="list-group-item">
+          <img src="./assets/icons/icon-2.svg" style="width: 20px" class="me-3" />
+          Join LEGO Insiders
+        </li>
+        <li class="list-group-item">My Blog</li>
+        <li class="list-group-item">
+          <i class="bi bi-geo-alt me-3"></i>
+          United States
+        </li>
+      </ul>
+    </div>
 
-    <!-- Header ends-->
     <!-- Backdrop shadow -->
     <div id="box-shadow"></div>
 
-    <!-- main starts -->
+    <!-- Main content -->
     <main>
-      <!-- first section -->
+      <!-- First section -->
       <section>
         <div class="container w-mx-1300 hero">
           <div class="row position-relative">
@@ -157,9 +188,9 @@
               <h1 class="text-center">
                 <strong class="fw-medium ls-1px">Flash Sale!</strong>
               </h1>
-              <span class="text-center py-3 fs-1-1">Fill your basket with savings on seleted LEGO items</span>
+              <span class="text-center py-3 fs-1-1">Fill your basket with savings on selected LEGO items</span>
               <button class="btn-3">
-                <span class="me-2 fw-medium"> Shop Now </span>
+                <span class="me-2 fw-medium">Shop Now</span>
                 <i class="bi bi-chevron-right fs-1-4"></i>
               </button>
             </div>
@@ -168,35 +199,35 @@
             <div class="col-lg-12 py-4 d-flex justify-content-center">
               <ul class="list-inline d-flex gap-3">
                 <li>
-                  <img src="./assets/home/home-1.webp" alt="product" />
+                  <img src="./assets/home/home-1.webp" alt="New" />
                   <small>New</small>
                 </li>
                 <li>
-                  <img src="./assets/home/home-2.webp" alt="product" />
+                  <img src="./assets/home/home-2.webp" alt="Electronics" />
                   <small>Electronics</small>
                 </li>
                 <li>
-                  <img src="./assets/home/home-3.webp" alt="product" />
+                  <img src="./assets/home/home-3.webp" alt="Offers" />
                   <small>Offers</small>
                 </li>
                 <li>
-                  <img src="./assets/home/home-4.webp" alt="product" />
+                  <img src="./assets/home/home-4.webp" alt="Bestsellers" />
                   <small>Bestsellers</small>
                 </li>
                 <li>
-                  <img src="./assets/home/home-5.webp" alt="product" />
+                  <img src="./assets/home/home-5.webp" alt="Star Wars" />
                   <small>Star Wars</small>
                 </li>
                 <li>
-                  <img src="./assets/home/home-6.webp" alt="product" />
+                  <img src="./assets/home/home-6.webp" alt="LEGO Icons" />
                   <small>LEGO Icons</small>
                 </li>
                 <li>
-                  <img src="./assets/home/home-7.webp" alt="product" />
+                  <img src="./assets/home/home-7.webp" alt="Gift Finder" />
                   <small>Gift finder</small>
                 </li>
                 <li>
-                  <img src="./assets/home/home-8.webp" alt="product" />
+                  <img src="./assets/home/home-8.webp" alt="LEGO Insiders" />
                   <small>LEGO Insiders</small>
                 </li>
               </ul>
@@ -206,6 +237,7 @@
       </section>
     </main>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
