@@ -240,4 +240,27 @@ ul.list-group {
     width: 45px !important;
     height: 45px !important;
   }
+  .text-content {
+    h1 {
+      font-size: 1.4rem;
+    }
+    .sale {
+      padding: 0.7rem 0rem !important;
+      font-size: 0.8rem !important;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .text-content {
+    button {
+      font-size: 0.4rem !important;
+      padding: 0.3rem !important;
+      span {
+        margin-left: 0;
+      }
+      i {
+        font-size: 0.4rem !important;
+      }
+    }
+  }
 }
