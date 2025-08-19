@@ -233,4 +233,11 @@ ul.list-group {
   .container {
     max-width: 900px !important;
   }
+  nav.navbar {
+    background-color: #fff !important;
+  }
+  .navbar-brand img {
+    width: 45px !important;
+    height: 45px !important;
+  }
 }
