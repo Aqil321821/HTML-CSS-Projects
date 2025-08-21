@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
     <!-- Debug button (hidden) -->
     <button id="toggle-debug" class="d-none">DB</button>
@@ -27,7 +28,7 @@
             <i class="bi bi-arrow-left me-2"></i>
             PLAY ZONE
           </button>
-          <div class="swiper mySwiper mw-50">
+          <div class="swiper mySwiper mw-50 top-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide fs-0-8">Lorem ipsum dolor sit amet elit.</div>
               <div class="swiper-slide fs-0-8">Fugit adipisci accusantium amet et tempora commodi.</div>
@@ -85,11 +86,11 @@
         <!-- icons on mob screens on right side -->
         <div class="d-lg-none">
           <div class="d-flex">
-            <a class="btn-search me-3" id="btnSearch" onclick="openSearch()">
+            <a class="btn-search me-3" id="btnSearchRS" onclick="openSearchRS()">
               <img src="./assets/icons/icon-3.svg" alt="search-icon" style="width: 20px; height: 20px" />
             </a>
 
-            <div class="input-group me-4 d-none" id="inpSearch">
+            <div class="input-group me-4 d-none" id="inpSearchRS">
               <input
                 style="z-index: 1051"
                 type="text"
@@ -107,7 +108,7 @@
                 class="position-absolute btn-next h-100 d-flex align-items-center"
                 id="clearBtn"
                 style="z-index: 1051"
-                onclick="openSearch()">
+                onclick="openSearchRS()">
                 <i class="bi bi-x"></i>
               </div>
             </div>
@@ -274,6 +275,67 @@
                   <small>LEGO Insiders</small>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- second section -->
+      <!-- section of week -->
+      <section class="week py-7">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mb-3">
+              <h2 class="text-black fw-light">This week's top Picks</h2>
+            </div>
+
+            <div class="swiper" id="slider2">
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                  <div class="card border-none">
+                    <img src="./assets/home/banner-1.webp" class="w-100" />
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                      <h5 class="text-center fw-500">Engage in a thrilling galactic chase</h5>
+                      <small class="my-2 text-center">LEGO Star Wars sets bring a galaxy of fun for fans</small>
+                      <a class="text-decoration-none link-dark d-flex align-items-center">
+                        <span class="me-2"> Shop Now </span>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                  <div class="card border-none">
+                    <img src="./assets/home/banner-2.webp" class="w-100" />
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                      <h5 class="text-center fw-500">Rev up your creative excitement</h5>
+                      <small class="my-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+                      <a class="text-decoration-none link-dark d-flex align-items-center">
+                        <span class="me-2"> Shop Now </span>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                  <div class="card border-none">
+                    <img src="./assets/home/banner-3.webp" class="w-100" />
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                      <h5 class="text-center fw-500">New Medieval Town Square</h5>
+                      <small class="my-2 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing.</small>
+                      <a class="text-decoration-none link-dark d-flex align-items-center">
+                        <span class="me-2"> Shop Now </span>
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Scrollbar -->
+              <div class="swiper-scrollbar week-bar"></div>
             </div>
           </div>
         </div>

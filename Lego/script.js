@@ -2,10 +2,25 @@
 //   document.body.classList.toggle('debug');
 // });
 
-var swiper = new Swiper('.mySwiper', {
+new Swiper('.mySwiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+});
+new Swiper('#slider2', {
+  slidesPerView: 'auto', // slides ki width CSS se aayegi
+  spaceBetween: 20, // slides ke beech ka gap
+  freeMode: true,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+    hide: false,
+  },
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    992: { slidesPerView: 3 },
   },
 });
 
@@ -24,6 +39,24 @@ function openSearch() {
     document.getElementById('inpSearch').classList.add('d-none');
     document.getElementById('box-shadow').innerHTML = '';
     inpSearch = false;
+  }
+}
+
+// for res
+let inpSearchRS = false;
+
+function openSearchRS() {
+  if (!inpSearchRS) {
+    document.getElementById('btnSearchRS').classList.add('d-none');
+    document.getElementById('inpSearchRS').classList.remove('d-none');
+    document.getElementById('box-shadow').innerHTML =
+      '<div onclick="openSearch()"  class="modal-backdrop fade show"></div>';
+    inpSearchRS = true;
+  } else {
+    document.getElementById('btnSearchRS').classList.remove('d-none');
+    document.getElementById('inpSearchRS').classList.add('d-none');
+    document.getElementById('box-shadow').innerHTML = '';
+    inpSearchRS = false;
   }
 }
 
