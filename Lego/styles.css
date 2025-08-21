@@ -249,6 +249,9 @@ ul.list-group {
       font-size: 0.8rem !important;
     }
   }
+  .swiper {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .text-content {
