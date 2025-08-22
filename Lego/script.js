@@ -16,6 +16,7 @@ new Swiper('#slider2', {
     el: '.swiper-scrollbar',
     draggable: true,
     hide: false,
+    snapOnRelease: false,
   },
   breakpoints: {
     0: { slidesPerView: 1 },
@@ -24,6 +25,17 @@ new Swiper('#slider2', {
   },
 });
 
+new Swiper('#slider3', {
+  slidesPerView: 'auto', // slides ki width CSS se aayegi
+  spaceBetween: 20, // slides ke beech ka gap
+  freeMode: true,
+  scrollbar: {
+    el: '.swiper-scrollbar-3',
+    draggable: true,
+    hide: false,
+    snapOnRelease: false,
+  },
+});
 // state to rep hide/show state of input bar
 let inpSearch = false;
 
@@ -106,3 +118,18 @@ function animateBars() {
   bar_2.classList.toggle('icon-bar-2-active');
   bar_3.classList.toggle('icon-bar-3-active');
 }
+
+// scroll reset:
+// Save scroll position
+window.addEventListener('beforeunload', () => {
+  localStorage.setItem('scrollPos', window.scrollY);
+});
+
+// Restore scroll position
+window.addEventListener('load', () => {
+  const scrollPos = localStorage.getItem('scrollPos');
+  if (scrollPos) {
+    window.scrollTo(0, parseInt(scrollPos));
+    localStorage.removeItem('scrollPos');
+  }
+});
