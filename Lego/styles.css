@@ -342,26 +342,50 @@ ul.list-group {
 }
 
 /* foutyh section */
-.fourth {
-  .card {
-    border-radius: 0px;
-  }
-  .card-header-top {
-    border: none;
-    background: transparent;
-    button {
-      border: none;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      margin-left: 10px;
+.fourth .card {
+  border-radius: 0px;
+}
 
-      i {
-        padding-top: 2px;
-        color: #1f7ebf;
-      }
-    }
-  }
+.fourth .card-header-top {
+  border: none;
+  background: transparent;
+}
+
+.fourth .card-header-top button {
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.fourth .card-header-top button i {
+  padding-top: 2px;
+  color: #1f7ebf;
+}
+
+/* Swiper scrollbar fix */
+/* Fix Swiper Scrollbar Extra Strip */
+.fourth .swiper-scrollbar {
+  position: absolute !important;
+  height: 7px !important;
+  margin-top: 15px;
+  background: #acacac !important;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 75% !important;
+  left: 50% !important; /* center me shift karo */
+  transform: translateX(-50%) !important; /* exact center align */
+}
+.fourth .swiper {
+  padding-bottom: 30px; /* neeche jagah bana do */
+}
+.fourth .swiper-scrollbar-drag {
+  background: #333328 !important; /* bright handle */
+  border-radius: 10px;
+}
+.fourth button.btn-5 {
+  margin-top: 10px;
 }
 
 /* media queries */
