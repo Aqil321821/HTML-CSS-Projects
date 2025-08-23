@@ -36,6 +36,22 @@ new Swiper('#slider3', {
     snapOnRelease: false,
   },
 });
+new Swiper('#slider4', {
+  slidesPerView: 'auto', // slides ki width CSS se aayegi
+  spaceBetween: 20, // slides ke beech ka gap
+  freeMode: true,
+  scrollbar: {
+    el: '.swiper-scrollbar-4',
+    draggable: true,
+    hide: false,
+    snapOnRelease: false,
+  },
+   breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    992: { slidesPerView: 3 },
+  },
+});
 // state to rep hide/show state of input bar
 let inpSearch = false;
 
