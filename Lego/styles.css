@@ -8,6 +8,22 @@
   right: 10px;
   z-index: 9999;
 }
+.mybr {
+  border: 1px solid red;
+}
+.myby {
+  border: 1px solid yellow;
+}
+.mybb {
+  border: 1px solid black;
+}
+.mybg {
+  border: 2px solid green;
+}
+.mybo {
+  border: 2px solid orange;
+}
+
 /* debug borders */
 .debug * {
   outline: 2px solid red; /* Base */
@@ -386,6 +402,25 @@ ul.list-group {
 }
 .fourth button.btn-5 {
   margin-top: 10px;
+}
+
+/* fifth */
+.fifth .first-row .col-lg-12 {
+  background-color: #300c54;
+  color: #fff;
+}
+
+.fifth .first-row button {
+  border-width: 2px;
+}
+
+.fifth .second-row .box-1 {
+  height: 300px;
+  background-color: #fef3e2;
+}
+
+.fifth .second-row .box-2 {
+  background: url('./assets/home/banner-101.jpg') center center / cover no-repeat;
 }
 
 /* media queries */
