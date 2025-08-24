@@ -46,10 +46,38 @@ new Swiper('#slider4', {
     hide: false,
     snapOnRelease: false,
   },
-   breakpoints: {
+  breakpoints: {
     0: { slidesPerView: 1 },
     768: { slidesPerView: 2 },
     992: { slidesPerView: 3 },
+  },
+});
+
+const swiper5 = new Swiper('#slider5', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+
+  // scrollbar
+  scrollbar: {
+    el: '.bar-5',
+    draggable: true,
+  },
+
+  // navigation
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // responsive breakpoints
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
   },
 });
 // state to rep hide/show state of input bar
