@@ -491,6 +491,32 @@ ul.list-group {
   cursor: pointer;
 }
 
+/* seven section */
+.seven .container {
+  background-color: #fee0c9;
+}
+
+.seven .box-1 {
+  background: url('./assets/home/banner-102.jpeg') center center / cover;
+}
+
+.seven .box-2 {
+  height: 300px;
+  gap: 15px;
+}
+
+.seven .small-pic {
+  padding: 0px !important;
+}
+/* section 8 */
+.eight .row {
+  background-color: #dad5d5;
+}
+.eight .col-12.text-content {
+  padding-right: 10rem;
+  padding-left: 10rem;
+}
+
 /* media queries */
 @media (max-width: 992px) {
   .container {
