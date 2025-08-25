@@ -162,18 +162,19 @@ function animateBars() {
   bar_2.classList.toggle('icon-bar-2-active');
   bar_3.classList.toggle('icon-bar-3-active');
 }
+document.getElementById('year').textContent = new Date().getFullYear();
 
 // scroll reset:
 // Save scroll position
-window.addEventListener('beforeunload', () => {
-  localStorage.setItem('scrollPos', window.scrollY);
-});
+// window.addEventListener('beforeunload', () => {
+//   localStorage.setItem('scrollPos', window.scrollY);
+// });
 
 // Restore scroll position
-window.addEventListener('load', () => {
-  const scrollPos = localStorage.getItem('scrollPos');
-  if (scrollPos) {
-    window.scrollTo(0, parseInt(scrollPos));
-    localStorage.removeItem('scrollPos');
-  }
-});
+// window.addEventListener('load', () => {
+//   const scrollPos = localStorage.getItem('scrollPos');
+//   if (scrollPos) {
+//     window.scrollTo(0, parseInt(scrollPos));
+//     localStorage.removeItem('scrollPos');
+//   }
+// });

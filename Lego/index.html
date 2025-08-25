@@ -601,13 +601,16 @@
       <!-- fifth section -->
       <section class="fifth">
         <div class="container">
-          <div class="row first-row">
-            <div class="col-lg-12 d-flex justify-content-center py-4 gap-4">
-              <h3>Discover endless worlds to create</h3>
+          <div class="row first-row text-center py-3 text-white" style="background-color: #201d48">
+            <div class="col-12">
+              <h3 class="mb-3">Discover endless worlds to create</h3>
+            </div>
+            <div class="col-12 d-flex justify-content-center gap-3">
               <button class="btn btn-outline-light rounded-5">Products</button>
               <button class="btn btn-outline-light rounded-5">About</button>
             </div>
           </div>
+
           <div class="row second-row">
             <div class="col-lg-6 box-1 d-flex align-items-center px-5">
               <div>
@@ -769,9 +772,11 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="mt-5 py-5">
+    <footer class="mt-5 pt-5">
       <div class="container">
-        <div class="row first-row">
+        <!-- first row -->
+        <div class="row first-row mb-3">
+          <!-- first col 3/12 -->
           <div class="col-lg-3 col-md-12 d-flex flex-column gap-2">
             <img class="logo mb-4" src="./assets/brand-lego.svg" />
             <button class="btn btn-dark mb-4 align-self-start">
@@ -785,6 +790,7 @@
               <li><a href="">Find a LEGO Store</a></li>
             </ul>
           </div>
+          <!-- second col 9/12 on medium & above-->
           <div class="col-lg-9 col-md-12 d-none d-md-block">
             <div class="row">
               <!-- Column 1 -->
@@ -837,7 +843,7 @@
               </div>
             </div>
           </div>
-          <!-- accordion on md screen -->
+          <!--second col 9/12  accordion on md screen on small screen -->
           <div class="col-lg-9 col-md-12 d-md-none acc-col">
             <div class="accordion" id="accordionExample3">
               <!-- 1st Acc item -->
@@ -939,10 +945,74 @@
             </div>
           </div>
         </div>
+        <!-- second row -->
+        <div class="d-flex justify-content-between sec-row">
+          <div class="box-1">
+            <label class="text-white fw-medium mb-3" for="form-email">SUBSCRIBE TO LEGO EMAILS</label>
+            <div class="input-group mb-3">
+              <input type="text" id="form-email" class="form-control" placeholder="Enter Your Email " />
+              <i class="input-group-text bi bi-chevron-right"></i>
+            </div>
+          </div>
+          <div class="box-2">
+            <h5 class="text-white">FOLLOW US</h5>
+            <div class="social">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-whatsapp"></i>
+              <i class="bi bi-twitter-x"></i>
+              <i class="bi bi-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <!-- third row -->
+        <div class="row third-row mt-4">
+          <div class="col-lg-12">
+            <ul class="list-unstyled d-flex flex-row column-gap-5 row-gap-3 justify-content-start flex-wrap">
+              <li>
+                <small><a href="">Privacy Policy</a></small>
+              </li>
+              <li>
+                <small><a href="">Cookies</a></small>
+              </li>
+              <li>
+                <small><a href="">Site Settings</a></small>
+              </li>
+              <li>
+                <small><a href="">Accessibility</a></small>
+              </li>
+              <li>
+                <small><a href="">Contact Us</a></small>
+              </li>
+              <li>
+                <small><a href="">Refund Policy</a></small>
+              </li>
+              <li>
+                <small><a href="">Legal Section</a></small>
+              </li>
+              <li>
+                <small><a href="">Claim Center</a></small>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-12 box-2">
+            <small>
+              LEGO System A/S, DK-7190 Billund, Denmark. Must be 18 years or older to purchase online. LEGO, the LEGO
+              logo, the Minifigure, DUPLO, the FRIENDS logo, the MINIFIGURES logo, DREAMZzz, NINJAGO, VIDIYO and
+              MINDSTORMS are trademarks of the LEGO Group. ©2025 The LEGO Group. All rights reserved. Use of this site
+              signifies your agreement to the Terms of Use.
+            </small>
+          </div>
+          <div class="trademark d-flex justify-content-end text-white mt-4 mb-3">
+            <small>Copyright &copy; Aaqil Rao <span id="year"></span></small>
+            <span>
+              <a href="https://github.com/Aqil321821" target="_blank" class="ms-2 text-white">
+                <i class="bi bi-github"></i>
+              </a>
+            </span>
+          </div>
+        </div>
       </div>
     </footer>
-
-    <div style="margin-bottom: 500px"></div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

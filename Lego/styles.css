@@ -602,6 +602,61 @@ footer .acc-col li a {
   color: white;
   font-weight: 300;
 }
+footer .sec-row {
+  margin-top: 40px;
+}
+footer .sec-row div.input-group {
+  width: 100%;
+}
+footer .sec-row input {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  padding: 12px;
+  border-color: #201d48;
+}
+.sec-row input:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: #201d48;
+}
+
+footer .sec-row i.input-group-text {
+  background-color: #e96f14;
+  border: none;
+}
+footer .sec-row .social {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+footer .sec-row .social i {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+}
+footer .sec-row .social i:hover {
+  color: #e96f14;
+}
+
+footer .third-row ul li small a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.75rem;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease-in;
+}
+footer .third-row ul li small a:hover {
+  border-color: white;
+}
+footer .third-row .box-2 small {
+  color: white;
+  font-size: 0.7rem;
+}
+footer .third-row .trademark i {
+  cursor: pointer;
+}
 #collapseFour > ul > li:nth-child(5) {
   border-bottom: 1px solid white;
 }
@@ -648,5 +703,12 @@ footer .acc-col li a {
 @media (max-width: 576px) {
   .sixth .swiper-scrollbar-drag {
     width: 100px !important;
+  }
+  .sec-row {
+    flex-direction: column;
+  }
+  .fifth .first-row .col-lg-12 button {
+    border-radius: 20px !important;
+    padding: 0px !important;
   }
 }
