@@ -1,0 +1,147 @@
+/* Reset basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make images responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Set a base font */
+body {
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+/* borders for debug */
+.mybr {
+  border: 1px solid red;
+}
+.myby {
+  border: 1px solid yellow;
+}
+.mybb {
+  border: 1px solid black;
+}
+.mybg {
+  border: 2px solid green;
+}
+.mybo {
+  border: 2px solid orange;
+}
+.mybw {
+  border: 2px solid white;
+}
+
+@font-face {
+  font-family: 'Cerebrisans Regular';
+  src: url('./assets/fonts/cerebrisans-regular.ttf');
+}
+@font-face {
+  font-family: 'Cerebrisans Bold';
+  src: url('./assets/fonts/Cerebri-Sans-Book.ttf');
+}
+
+/* top div */
+.top-div {
+  background-color: #fafaf2;
+}
+
+.top-div ul li a {
+  font-family: 'Cerebrisans Regular', sans-serif;
+  color: rgb(28, 28, 28);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+.top-div ul li a:hover {
+  text-decoration: underline;
+}
+
+/* nav */
+nav {
+  border-bottom: 1px solid #333;
+}
+nav .container-fluid {
+  padding: 0 clamp(1rem, 1.5vw, 2.7rem) !important;
+}
+
+nav div.icons a {
+  font-weight: 500;
+  margin-left: 5px;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  letter-spacing: 0.7px;
+}
+
+nav div.icons a:hover {
+  text-decoration: underline;
+}
+
+/* custom media queries */
+/* Mobile devices (phones, <576px) */
+@media (max-width: 575.98px) {
+  /* CSS rules for small screens */
+  .top-div div.d-flex {
+    justify-content: center !important;
+  }
+  .top-div ul li {
+    display: none;
+  }
+  .top-div ul li:first-child {
+    display: block;
+  }
+  nav div.icons a {
+    display: none;
+  }
+  
+}
+
+/* Small devices (≥576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .top-div div.d-flex {
+    justify-content: center !important;
+  }
+  .top-div ul li {
+    display: none;
+  }
+  .top-div ul li:first-child {
+    display: block;
+  }
+  nav .icons a {
+    display: none;
+  }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* CSS rules for tablets / small laptops */
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* CSS rules for laptops / desktops */
+}
+
+/* Extra large devices (≥1200px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* CSS rules for large desktops */
+}
+
+/* Extra extra large devices (≥1400px) */
+@media (min-width: 1400px) {
+  /* CSS rules for very large screens */
+}
