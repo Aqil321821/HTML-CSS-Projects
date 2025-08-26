@@ -110,9 +110,9 @@ nav span {
   z-index: 111;
   padding: 3rem 0;
   padding-left: 6rem;
-  transition: transform 0.3s ease-in-out;
   font-size: 0.8rem;
   color: #414141;
+  transition: transform 0.3s ease-in-out;
   transform: translateX(-100%);
   overflow-y: scroll;
 }
@@ -139,6 +139,45 @@ nav span {
   cursor: pointer;
 }
 
+/* mobile offcanvas menu */
+.off-mobile {
+  background-color: #fafaf2;
+  position: fixed; /* page ke upar chipka do */
+  top: 94px;
+  left: 0;
+  width: 100%; /* full width screen ka */
+  height: 100%; /* full height */
+  z-index: 111;
+  overflow-y: scroll;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+}
+.off-mobile.active {
+  transform: translateX(0);
+}
+
+.off-mobile ul {
+  padding: 1rem;
+}
+
+.off-mobile ul li {
+  border-bottom: 1px solid #a5a4a4;
+  padding: 0.5rem;
+}
+
+.off-mobile ul li.no-img {
+  padding: 1rem;
+}
+
+.off-mobile ul li a {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.off-mobile li img {
+  width: 60px;
+}
+
 /* custom media queries */
 /* Mobile devices (phones, <576px) */
 @media (max-width: 575.98px) {
@@ -159,6 +198,20 @@ nav span {
 /* custom media query for offcanvas menu  */
 @media (max-width: 848px) {
   #my-menu-offcanvas1 {
+    display: none !important;
+  }
+  .desktop-nav {
+    display: none !important;
+  }
+}
+@media (min-width: 849px) {
+  .desktop-nav {
+    display: flex !important;
+  }
+  .mobile-nav {
+    display: none !important;
+  }
+  .off-mobile {
     display: none !important;
   }
 }
