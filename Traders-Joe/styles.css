@@ -75,6 +75,7 @@ body {
 /* nav */
 nav {
   border-bottom: 1px solid #333;
+  padding: 0px !important;
 }
 nav .container-fluid {
   padding: 0 clamp(1rem, 1.5vw, 2.7rem) !important;
@@ -89,6 +90,38 @@ nav div.icons a {
 
 nav div.icons a:hover {
   text-decoration: underline;
+}
+
+/* off-canvas */
+#my-menu-offcanvas1 {
+  padding: 3rem 0;
+  padding-left: 6rem;
+
+  font-size: 0.8rem;
+  color: #414141;
+  transform: translateX(-100%);
+}
+#my-menu-offcanvas1.active {
+  transform: translateX(0);
+}
+
+#my-menu-offcanvas1 .first-menu-col img {
+  height: 100px;
+}
+#my-menu-offcanvas1 .first-menu-col {
+  border-right: 1px solid #9b9b9b;
+  padding: 1rem;
+}
+#my-menu-offcanvas1 .first-menu-col.no {
+  border: none;
+}
+
+#my-menu-offcanvas1 a:hover,
+#my-menu-offcanvas1 span:hover,
+#my-menu-offcanvas1 strong:hover,
+#my-menu-offcanvas1 h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* custom media queries */
@@ -107,7 +140,17 @@ nav div.icons a:hover {
   nav div.icons a {
     display: none;
   }
-  
+}
+/* custom media query for offcanvas menu  */
+@media (max-width: 848px) {
+  #my-menu-offcanvas1 {
+    display: none !important;
+  }
+}
+@media (max-width: 1030px) {
+  #my-menu-offcanvas1 {
+    padding-left: clamp(1rem, 0.5rem + 1vw, 6rem);
+  }
 }
 
 /* Small devices (≥576px) */

@@ -44,8 +44,11 @@
     <nav class="navbar navbar-expand-lg pb-2">
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <span>
+          <span class="d-block" id="ham-btn">
             <img src="./assets/home/icon-3.svg" />
+          </span>
+          <span class="d-none" id="corss-btn">
+            <img src="./assets/home/icon-4.svg" />
           </span>
           <a class="navbar-brand ms-3 ms-md-5" href="#">
             <img src="./assets/home/logo.svg" />
@@ -63,6 +66,123 @@
         </div>
       </div>
     </nav>
+
+    <!-- offcanvas menu -->
+    <div id="my-menu-offcanvas1" class="d-flex">
+      <!-- 1st col of menu -->
+      <div class="d-flex first-menu-col">
+        <div class="d-flex flex-column gap-2">
+          <h5>
+            <strong> Products </strong>
+          </h5>
+          <span><strong>What's New</strong></span>
+          <div class="d-flex flex-column gap-2">
+            <span><strong>Food</strong></span>
+            <ul class="list-inline d-flex flex-column gap-2">
+              <li><a href="">Bakery</a></li>
+              <li><a href="">Cheese</a></li>
+              <li><a href="">Dairy & Eggs</a></li>
+              <li><a href="">Dips, Sauces & Dressings</a></li>
+              <li><a href="">Fresh Prepared Foods</a></li>
+              <li><a href="">From the Freezer</a></li>
+              <li><a href="">Fresh Fruits & Veggies</a></li>
+              <li><a href="">Meat, Seafood & Plant-based</a></li>
+              <li><a href="">For the Pantry</a></li>
+              <li><a href="">Snacks & Sweets</a></li>
+            </ul>
+            <div class="d-flex flex-column gap-2">
+              <span><strong>Beverages</strong></span>
+              <span><strong>Flower & Plants</strong></span>
+              <span><strong>Everything Else</strong></span>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/home/icon-5.webp" />
+      </div>
+      <!-- 2nd col of menu -->
+      <div class="d-flex first-menu-col ms-3">
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex column-gap-5 justify-content-between">
+            <div>
+              <h5>
+                <strong> Discover </strong>
+              </h5>
+              <ul class="list-inline d-flex flex-column gap-2">
+                <li><a href="">Entertaining</a></li>
+                <li><a href="">Guides</a></li>
+                <li><a href="">Stories</a></li>
+                <li><a href="">Subscribe</a></li>
+              </ul>
+            </div>
+            <div>
+              <img src="./assets/home/icon-6.webp" />
+            </div>
+          </div>
+          <div class="d-flex column-gap-5 justify-content-between">
+            <div>
+              <h5>
+                <strong> Recipes </strong>
+              </h5>
+              <ul class="list-inline d-flex flex-column gap-2">
+                <li><a href="">Appetizers & Sides</a></li>
+                <li><a href="">Beverages</a></li>
+                <li><a href="">Breakfast</a></li>
+                <li><a href="">Lunch</a></li>
+                <li><a href="">Dinner</a></li>
+                <li><a href="">Desserts</a></li>
+              </ul>
+            </div>
+            <div>
+              <img src="./assets/home/icon-7.webp" />
+            </div>
+          </div>
+          <div class="d-flex justify-content-between column-gap-5">
+            <div>
+              <h5>
+                <strong> Listen </strong>
+              </h5>
+            </div>
+            <div>
+              <img src="./assets/home/icon-8.webp" />
+            </div>
+          </div>
+          <div class="d-flex justify-content-between column-gap-5">
+            <div>
+              <h5>
+                <strong> Careers </strong>
+              </h5>
+            </div>
+            <div>
+              <img src="./assets/home/icon-9.webp" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3rd col of menu -->
+      <div class="d-flex first-menu-col no ms-3">
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex column-gap-5 justify-content-between">
+            <div>
+              <h5>
+                <strong> About Us </strong>
+              </h5>
+              <ul class="list-inline d-flex flex-column gap-2">
+                <li><a href="">Neighborhood Shares</a></li>
+                <li><a href="">Announcements</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h5>
+              <strong> About Us </strong>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
