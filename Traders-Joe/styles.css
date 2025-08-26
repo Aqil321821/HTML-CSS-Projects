@@ -77,6 +77,10 @@ nav {
   border-bottom: 1px solid #333;
   padding: 0px !important;
 }
+/* when side bar is shown then cream bg on nav */
+.bg-nav-cream {
+  background-color: #fafaf2;
+}
 nav .container-fluid {
   padding: 0 clamp(1rem, 1.5vw, 2.7rem) !important;
 }
@@ -91,15 +95,26 @@ nav div.icons a {
 nav div.icons a:hover {
   text-decoration: underline;
 }
+nav span {
+  cursor: pointer;
+}
 
 /* off-canvas */
 #my-menu-offcanvas1 {
+  position: fixed; /* page ke upar chipka do */
+  top: 94px;
+  left: 0;
+  width: 100%; /* full width screen ka */
+  height: 100vh; /* full height */
+  background-color: #fafaf2;
+  z-index: 111;
   padding: 3rem 0;
   padding-left: 6rem;
-
+  transition: transform 0.3s ease-in-out;
   font-size: 0.8rem;
   color: #414141;
   transform: translateX(-100%);
+  overflow-y: scroll;
 }
 #my-menu-offcanvas1.active {
   transform: translateX(0);
