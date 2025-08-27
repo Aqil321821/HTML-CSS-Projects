@@ -82,6 +82,9 @@ body {
 .top-div {
   background-color: #fafaf2;
 }
+.top-div ul {
+  padding-left: 0px;
+}
 
 .top-div ul li a {
   font-family: 'Cerebrisans Regular', sans-serif;
@@ -100,15 +103,17 @@ nav {
 #myNav {
   position: sticky;
   top: 0px;
-  z-index: 111111;
+  z-index: 3;
   background-color: #fff;
+  width: 100%;
 }
 /* when side bar is shown then cream bg on nav */
 .bg-nav-cream {
   background-color: #fafaf2;
 }
 nav .container-fluid {
-  padding: 0 clamp(1rem, 1.5vw, 2.7rem) !important;
+  padding-right: clamp(1rem, 1.5vw, 2.7rem) !important;
+  padding-left: clamp(1rem, 1.5vw, 2.7rem) !important;
 }
 
 nav div.icons a {
@@ -125,16 +130,23 @@ nav span {
   cursor: pointer;
   margin-left: 35px;
 }
+/* 
+section- relative , z0
+off1- absolute , z1
+
+
+
+*/
 
 /* off-canvas */
 #my-menu-offcanvas1 {
-  position: fixed; /* page ke upar chipka do */
+  position: absolute; /* page ke upar chipka do */
   top: 50px;
   left: 0;
   width: 100%; /* full width screen ka */
   height: 100vh; /* full height */
   background-color: #fafaf2;
-  z-index: 111;
+  z-index: 2;
   padding: 3rem 0;
   padding-left: 6rem;
   font-size: 0.8rem;
@@ -214,9 +226,7 @@ body.menu-open {
   background: url('./assets/home/webp-bg.webp');
   padding: 1rem 1rem;
 }
-#header .row {
-  margin-left: 5rem;
-}
+
 #header h1 {
   font-size: 3.6rem;
   font-family: 'Fre Bold';
@@ -275,6 +285,97 @@ body.menu-open {
 #header button:hover .rightDiv {
   border-width: 2px;
 }
+
+/* bookmark */
+
+.bookmark {
+  position: fixed;
+  transition: transform 0.3s ease;
+  left: 30px;
+  z-index: 2;
+  background-color: white;
+  width: 90px;
+  padding: 0.7rem;
+  border: 1px solid #333;
+  border-top: none;
+  border-bottom: none;
+}
+
+.bookmark ul {
+  padding-left: 0px;
+}
+
+.bookmark ul li {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  margin-bottom: 5px;
+}
+
+.bookmark ul li a {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3px;
+  color: #333;
+}
+
+.bookmark ul li a:hover {
+  text-decoration: underline;
+}
+
+.bookmark .leftBM {
+  width: 47px;
+  height: 52px;
+  top: 0;
+  left: -12px;
+  border-left: 1px solid #000;
+  overflow: hidden;
+  background: linear-gradient(-33deg, transparent 45%, #fff 0);
+}
+
+.bookmark .leftBM::before {
+  content: '';
+  position: absolute;
+  border: 1px solid black;
+  width: 10px;
+  height: 64px;
+  background-color: #af0006;
+  display: block;
+  transform: rotate(54deg);
+  left: 18px;
+}
+
+.bookmark .rightBM {
+  width: 47px;
+  height: 52px;
+  top: 0;
+  background-color: white;
+  right: -12px;
+  border-right: 1px solid #000;
+  overflow: hidden;
+  background: linear-gradient(33deg, transparent 45%, #fff 0);
+}
+
+.bookmark .rightBM::before {
+  content: '';
+  position: absolute;
+  border: 1px solid black;
+  width: 10px;
+  height: 64px;
+  background-color: #af0006;
+  display: block;
+  transform: rotate(302deg);
+  left: 18px;
+}
+
+.bookmark.zero {
+  top: 50px;
+}
+.bookmark.one {
+  top: 90px;
+}
+/* bookmark ends */
 
 /* custom media queries */
 /* Mobile devices (phones, <576px) */
@@ -357,9 +458,19 @@ body.menu-open {
 /* Extra large devices (≥1200px) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   /* CSS rules for large desktops */
+  #header .row {
+    margin-left: 4rem !important;
+  }
 }
-
+@media (min-width: 1300px) {
+  .bookmark {
+    display: block !important;
+  }
+}
 /* Extra extra large devices (≥1400px) */
 @media (min-width: 1400px) {
   /* CSS rules for very large screens */
+  #header .row {
+    margin-left: 4rem !important;
+  }
 }

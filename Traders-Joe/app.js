@@ -7,6 +7,7 @@ let mobOffCanvas = document.getElementById('off-mobile');
 
 let offCanvas = document.getElementById('my-menu-offcanvas1');
 let myNav = document.getElementById('myNav');
+let bookmark = document.getElementById('bookmark');
 
 hamBtn.addEventListener('click', () => {
   hamBtn.classList.add('d-none');
@@ -36,3 +37,27 @@ crossBtnMob.addEventListener('click', () => {
   myNav.classList.remove('bg-nav-cream');
   document.body.classList.remove('menu-open');
 });
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    bookmark.classList.remove('one');
+    bookmark.classList.add('zero');
+  } else if (window.scrollY === 0) {
+    bookmark.classList.add('one');
+    bookmark.classList.remove('zero');
+  }
+});
+
+
+// window.addEventListener('resize', setBookmarkTop);
+// window.addEventListener('scroll', setBookmarkTop);
+
+// function setBookmarkTop() {
+//   const navbar = document.getElementById('myNav');
+//   const bookmark = document.getElementById('bookmark');
+//   if (navbar && bookmark) {
+//     const navHeight = navbar.offsetHeight;
+//     bookmark.style.top = 50 + navHeight + 'px';
+//   }
+// }
+// setBookmarkTop();
