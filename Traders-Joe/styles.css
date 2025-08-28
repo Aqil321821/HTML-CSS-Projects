@@ -185,7 +185,7 @@ body.menu-open {
 .off-mobile {
   background-color: #fafaf2;
   position: fixed; /* page ke upar chipka do */
-  top: 94px;
+  top: 77px;
   left: 0;
   width: 100%; /* full width screen ka */
   height: 100%; /* full height */
@@ -434,13 +434,17 @@ body.menu-open {
   font-family: 'FreightTextProBold-Regular';
   font-weight: 700;
 }
-
+.sec-1 .swiper-slide div.card-text h2 a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
 .sec-1 .swiper-slide div.card-text p {
   font-family: 'FreightTextProMedium-Regular';
   font-weight: 500;
   font-size: 1.2rem;
   display: -webkit-box;
-  -webkit-line-clamp: 3; 
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -461,7 +465,6 @@ body.menu-open {
 }
 
 /* 2nd col */
-
 
 /* section 1 Ends Here */
 /* custom media queries */

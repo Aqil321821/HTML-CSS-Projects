@@ -15,6 +15,7 @@ hamBtn.addEventListener('click', () => {
   offCanvas.classList.add('active');
   myNav.classList.add('bg-nav-cream');
   document.body.classList.add('menu-open');
+  window.scrollTo(0, 0);
 });
 crossBtn.addEventListener('click', () => {
   crossBtn.classList.add('d-none');
@@ -29,6 +30,7 @@ hamBtnMob.addEventListener('click', () => {
   mobOffCanvas.classList.add('active');
   myNav.classList.add('bg-nav-cream');
   document.body.classList.add('menu-open');
+  window.scrollTo(0, 0);
 });
 crossBtnMob.addEventListener('click', () => {
   crossBtnMob.classList.add('d-none');
