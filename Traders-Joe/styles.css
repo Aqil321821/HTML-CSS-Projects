@@ -422,10 +422,6 @@ body.menu-open {
   font-weight: 600 !important;
 }
 
-.sec-1 .row {
-  margin-left: 3.5rem;
-}
-
 .sec-1 .swiper-slide {
   padding: 3px;
 }
@@ -555,6 +551,9 @@ body.menu-open {
 @media (min-width: 1300px) {
   .bookmark {
     display: block !important;
+  }
+  .sec-1 .row {
+    margin-left: 3.5rem !important;
   }
 }
 /* Extra extra large devices (≥1400px) */
