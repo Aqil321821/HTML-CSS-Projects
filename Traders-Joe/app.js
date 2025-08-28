@@ -48,6 +48,9 @@ window.addEventListener('scroll', () => {
   }
 });
 
+window.addEventListener('scroll', () => {
+  console.log(window.scrollY);
+});
 
 // window.addEventListener('resize', setBookmarkTop);
 // window.addEventListener('scroll', setBookmarkTop);
@@ -61,3 +64,18 @@ window.addEventListener('scroll', () => {
 //   }
 // }
 // setBookmarkTop();
+
+// swiper
+new Swiper('.mySwiper', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

@@ -185,7 +185,7 @@ body.menu-open {
 .off-mobile {
   background-color: #fafaf2;
   position: fixed; /* page ke upar chipka do */
-  top: 50px;
+  top: 94px;
   left: 0;
   width: 100%; /* full width screen ka */
   height: 100%; /* full height */
@@ -377,6 +377,93 @@ body.menu-open {
 }
 /* bookmark ends */
 
+/* section1 */
+/* section 1 first col */
+.sec-1 .swiper-button-next,
+.sec-1 .swiper-button-prev {
+  position: relative !important;
+  color: #333 !important;
+  margin-top: 0px !important;
+  height: auto !important;
+}
+
+.sec-1 .swiper-button-next::after,
+.sec-1 .swiper-button-prev::after {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.sec-1 .swiper .swiper-pagination {
+  width: auto !important;
+  position: relative !important;
+  margin-top: 20px;
+  text-align: center;
+  margin-right: 0.8rem !important;
+}
+
+.sec-1 .swiper .swiper-pagination span {
+  margin-left: 1rem;
+}
+
+.sec-1 .swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: transparent !important;
+  font-family: 'Cerebrisans Bold' !important;
+  font-size: 1.2rem !important;
+  opacity: 0.9;
+}
+
+.sec-1 .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  text-decoration: underline;
+  text-decoration-color: #af0006;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+  font-weight: 600 !important;
+}
+
+.sec-1 .row {
+  margin-left: 3.5rem;
+}
+
+.sec-1 .swiper-slide {
+  padding: 3px;
+}
+
+.sec-1 .swiper-slide div.card-text h2 {
+  font-family: 'FreightTextProBold-Regular';
+  font-weight: 700;
+}
+
+.sec-1 .swiper-slide div.card-text p {
+  font-family: 'FreightTextProMedium-Regular';
+  font-weight: 500;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5rem;
+}
+
+.sec-1 .swiper-slide div.img {
+  border: 1px solid #333;
+  padding: 8px;
+  margin-left: 5px;
+  height: 350px;
+}
+
+.sec-1 .swiper-slide div.img img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* 2nd col */
+
+
+/* section 1 Ends Here */
 /* custom media queries */
 /* Mobile devices (phones, <576px) */
 @media (max-width: 575.98px) {
