@@ -804,6 +804,9 @@ body.menu-open {
   nav div.icons a {
     display: none;
   }
+  .sec-2 .row h3 {
+    font-size: 1.2rem;
+  }
 }
 /* custom media query for offcanvas menu  */
 @media (max-width: 848px) {
@@ -853,6 +856,9 @@ body.menu-open {
   }
   nav .icons a {
     display: none;
+  }
+  .sec-2 .row h3 {
+    font-size: 1.5rem;
   }
 }
 
