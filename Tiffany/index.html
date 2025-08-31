@@ -74,7 +74,7 @@
       </div>
     </nav>
 
-    <div class="quick-links bg-body-tertiary py-1">
+    <div class="quick-links bg-body-tertiary pt-1 pb-2">
       <div class="d-flex justify-content-center">
         <ul class="d-flex gap-5 py-1 px-2">
           <li><a href="">Jewelry</a></li>
@@ -88,6 +88,39 @@
         </ul>
       </div>
     </div>
+
+    <!-- video section -->
+    <section class="video">
+      <div id="video-1" class="d-flex justify-content-center align-items-center main-box mybr position-relative">
+        <video
+          id="video-desk"
+          class="w-100"
+          loop
+          muted
+          playsinline
+          src="./assets/media/1.videos/2024-Icons-HP-Hero-T-Video-Desktop-SFCC.mp4"></video>
+
+        <button class="btn-left ms-2 mb-2" id="pause-play">
+          <i class="bi bi-play-fill d-none" id="play"></i>
+          <i class="bi bi-pause-fill" id="pause"></i>
+        </button>
+        <button class="btn-right me-2 mb-2 " id="sound-btn">
+          <i class="bi bi-volume-up-fill" id="unmuteIcon"></i>
+          <i class="bi bi-volume-mute-fill d-none" id="muteIcon"></i>
+        </button>
+
+        <div class="mb-3 d-flex align-items-center justify-content-center position-absolute text-white child-box p-5">
+          <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+            <h2 class="text-center ff-lora">With Love , Since 1837</h2>
+            <p class="text-center ff-lora">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nulla voluptatum dolor perspiciatis nisi
+              quam, cum impedit laborum voluptates sint!
+            </p>
+            <a href="" class="ff-lora px-4 py-2 text-dark bg-white">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./app.js"></script>

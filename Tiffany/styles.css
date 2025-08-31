@@ -157,3 +157,48 @@ nav .box-3 span i:hover {
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
 }
+.ff-lora {
+  font-family: 'Lora', serif;
+}
+.video {
+  .main-box {
+    margin: 0 3rem !important;
+  }
+  .child-box {
+    max-width: 500px;
+    bottom: 0;
+  }
+  .btn-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .btn-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  a {
+    border: 1px solid #333;
+  }
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: #81d8d0;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  button {
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: none;
+    i {
+      font-size: 1.5rem;
+    }
+  }
+
+  #video-1:hover button {
+    display: block;
+  }
+}
