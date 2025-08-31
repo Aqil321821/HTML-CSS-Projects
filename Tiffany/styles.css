@@ -1,0 +1,159 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Reset basic elements */
+
+*,
+*::before,
+*::after {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make images responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Set a base font */
+body {
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+#toggle-debug {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+.mybr {
+  border: 1px solid red;
+}
+.myby {
+  border: 1px solid yellow;
+}
+.mybb {
+  border: 1px solid black;
+}
+.mybg {
+  border: 2px solid green;
+}
+.mybo {
+  border: 2px solid orange;
+}
+.mybw {
+  border: 2px solid white;
+}
+
+/* section 1 top div */
+.top-div {
+  background: #81d8d0;
+  height: 48px;
+}
+
+.top-div .box-1 p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.top-div .box-2 a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-size: 0.9rem;
+}
+
+.top-div .box-2 button {
+  background: transparent;
+  border: none;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.top-div .box-2 button i {
+  font-size: 0.6rem;
+}
+
+.top-div .box-2 button i::before {
+  vertical-align: 0px !important;
+}
+
+/* nav */
+nav .box-1 span i {
+  cursor: pointer;
+}
+
+nav .box-1 span i:hover {
+  color: #0b887e;
+}
+
+nav .box-1 span.contact a {
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+nav .box-2 h4 {
+  font-family: 'Lora', serif;
+  letter-spacing: 2px;
+  word-spacing: 0.1px;
+}
+
+nav .box-2 h4:first-letter {
+  font-size: 2.5rem;
+}
+
+nav .box-2 span i:hover {
+  color: #0b887e;
+}
+
+nav .box-3 span i {
+  cursor: pointer;
+}
+
+nav .box-3 span a {
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+nav .box-3 span a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+nav .box-3 span i:hover {
+  color: #0b887e;
+}
+
+/* quick links */
+.quick-links a {
+  font-weight: 500;
+  opacity: 0.7;
+  color: #000000;
+  transition: opacity 0.3s ease;
+  font-size: 0.85rem;
+}
+.quick-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-color: #81d8d0;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
