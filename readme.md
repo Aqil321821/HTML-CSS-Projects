@@ -61,6 +61,13 @@ A simple static landing page created to practice basic layout and HTML/CSS struc
 
 ---
 
+### 7. 🚀 Trader's Joe copy
+
+A simple static landing page created to practice basic layout and HTML/CSS structure.  
+🔗 <a href="https://monumental-profiterole-91837f.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site ➜ https://starbuck-rao.netlify.app/</a>
+
+---
+
 ## ⚠️ Note
 
 These projects are **not connected to any backend**, and do **not contain functional logic** — they are created **purely for practicing layout and design**.
