@@ -31,3 +31,8 @@ soundBtn.addEventListener('click', () => {
     unmuteIcon.classList.remove('d-none');
   }
 });
+
+let dropdown = document.querySelector('.dropdown-menu');
+dropdown.addEventListener('click', (e) => {
+  e.stopPropagation();
+});

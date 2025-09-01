@@ -160,45 +160,83 @@ nav .box-3 span i:hover {
 .ff-lora {
   font-family: 'Lora', serif;
 }
-.video {
-  .main-box {
-    margin: 0 3rem !important;
-  }
-  .child-box {
-    max-width: 500px;
-    bottom: 0;
-  }
-  .btn-left {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  .btn-right {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-  a {
-    border: 1px solid #333;
-  }
-  a:hover {
-    text-decoration: underline;
-    text-decoration-color: #81d8d0;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
-  }
-  button {
-    border: none;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    display: none;
-    i {
-      font-size: 1.5rem;
-    }
-  }
+.video .main-box {
+  margin: 0 3rem !important;
+}
 
-  #video-1:hover button {
-    display: block;
+.video .child-box {
+  max-width: 500px;
+  bottom: 0;
+}
+
+.video .btn-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.video .btn-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.video a {
+  border: 1px solid #333;
+}
+
+.video a:hover {
+  text-decoration: underline;
+  text-decoration-color: #81d8d0;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.video button {
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: none;
+}
+
+.video button i {
+  font-size: 1.5rem;
+}
+
+.video #video-1:hover button {
+  display: block;
+}
+
+/* styling regarding dropdown menu */
+.quick-links {
+  li {
+    position: static !important;
+  }
+  .dropdown-menu {
+    width: 100% !important;
+    right: 0 !important;
+    left: auto !important;
+    border-radius: 0px !important;
+    border: none !important;
+  }
+  .dropdown-toggle::after {
+    display: none !important;
+  }
+  .dropdown-menu .first-row .col-3 h3 {
+    margin-top: 15px !important;
+    font-size: 0.8rem;
+  }
+  .dropdown-menu .row .col-3 ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    li:first-child {
+      margin-top: 15px !important;
+      a {
+        font-weight: 700 !important;
+        color: #000000;
+      }
+    }
   }
 }
